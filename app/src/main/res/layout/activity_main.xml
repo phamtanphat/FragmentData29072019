@@ -21,10 +21,19 @@
         android:layout_below="@id/textviewMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <LinearLayout
+    <Button
+        android:text="Add Android Fragment"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/seekbarMain"
-        android:orientation="vertical"
-        android:id="@+id/linearMain"
+        android:id="@+id/buttonAddAndroidFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <fragment
+        tools:layout="@layout/fragment_android"
+        android:name="com.example.fragmentdata29072019.AndroidFragment"
+        android:id="@+id/fragmentAndroid"
+        android:layout_below="@id/buttonAddAndroidFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </RelativeLayout>
